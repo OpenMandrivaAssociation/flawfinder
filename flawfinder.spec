@@ -9,6 +9,7 @@ URL:            http://www.dwheeler.com/flawfinder/
 Source0:        http://www.dwheeler.com/flawfinder/flawfinder-%{version}.tar.gz
 Requires:       python
 BuildArch:      noarch
+BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
 Flawfinder scans through C/C++ source code, identifying lines ("hits") with
