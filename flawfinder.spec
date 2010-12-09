@@ -1,6 +1,6 @@
 Name:           flawfinder
 Version:        1.27
-Release:        %mkrel 5
+Release:        %mkrel 6
 Epoch:          0
 Summary:        Examines C/C++ source code for security flaws
 License:        GPL
