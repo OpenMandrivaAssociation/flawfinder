@@ -39,3 +39,35 @@ the riskiest lines first.
 %{_mandir}/man1/flawfinder.1*
 
 
+
+
+%changelog
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 0:1.27-6mdv2011.0
++ Revision: 618304
+- the mass rebuild of 2010.0 packages
+
+* Thu Sep 03 2009 Thierry Vignaud <tv@mandriva.org> 0:1.27-5mdv2010.0
++ Revision: 428796
+- rebuild
+
+* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 0:1.27-4mdv2009.0
++ Revision: 245197
+- rebuild
+
+* Wed Jan 02 2008 Olivier Blin <oblin@mandriva.com> 0:1.27-2mdv2008.1
++ Revision: 140730
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+
+* Wed Jan 17 2007 David Walluck <walluck@mandriva.org> 1.27-2mdv2007.0
++ Revision: 109767
+- fix included docs
+- 1.27
+- Import flawfinder
+
+* Thu Sep 09 2004 Frederic Lepied <flepied@mandrakesoft.com> 1.26-1mdk
+- New release 1.26
+
