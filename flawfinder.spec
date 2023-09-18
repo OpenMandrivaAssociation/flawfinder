@@ -1,12 +1,12 @@
 Name:           flawfinder
-Version:        1.27
-Release:        7
+Version:        2.0.19
+Release:        1
 Epoch:          0
 Summary:        Examines C/C++ source code for security flaws
-License:        GPL
+License:        GPLv2+
 Group:          Development/C
-URL:            http://www.dwheeler.com/flawfinder/
-Source0:        http://www.dwheeler.com/flawfinder/flawfinder-%{version}.tar.gz
+URL:            https://www.dwheeler.com/flawfinder/
+Source0:        https://www.dwheeler.com/flawfinder/flawfinder-%{version}.tar.gz
 Requires:       python
 BuildArch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
@@ -20,13 +20,13 @@ the riskiest lines first.
 %setup -q
 
 %build
-%{make}
+%{make_build}
 
 %install
 %{__rm} -rf %{buildroot}
 %{__mkdir_p} %{buildroot}%{_bindir}
 %{__mkdir_p} %{buildroot}%{_mandir}/man1
-%{__cp} -a flawfinder %{buildroot}%{_bindir}/flawfinder
+%{__cp} -a flawfinder.py %{buildroot}%{_bindir}/flawfinder
 /bin/zcat flawfinder.1.gz >%{buildroot}%{_mandir}/man1/flawfinder.1
 
 %clean
@@ -34,7 +34,7 @@ the riskiest lines first.
 
 %files
 %defattr(0644,root,root,0755)
-%doc announcement ChangeLog COPYING flawfinder.p{df,s} INSTALL.txt README 
+%doc announcement ChangeLog COPYING flawfinder.p{df,s} INSTALL.md README.md
 %attr(0755,root,root) %{_bindir}/flawfinder
 %{_mandir}/man1/flawfinder.1*
 
