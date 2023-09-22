@@ -27,7 +27,7 @@ the riskiest lines first.
 %{__mkdir_p} %{buildroot}%{_bindir}
 %{__mkdir_p} %{buildroot}%{_mandir}/man1
 %{__cp} -a flawfinder.py %{buildroot}%{_bindir}/flawfinder
-/bin/zcat flawfinder.1.gz >%{buildroot}%{_mandir}/man1/flawfinder.1
+#/bin/zcat flawfinder.1.gz >%{buildroot}%{_mandir}/man1/flawfinder.1
 
 %clean
 %{__rm} -rf %{buildroot}
