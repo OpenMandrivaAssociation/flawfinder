@@ -36,7 +36,7 @@ the riskiest lines first.
 %defattr(0644,root,root,0755)
 %doc announcement ChangeLog COPYING flawfinder.p{df,s} INSTALL.md README.md
 %attr(0755,root,root) %{_bindir}/flawfinder
-%{_mandir}/man1/flawfinder.1*
+#{_mandir}/man1/flawfinder.1*
 
 
 
