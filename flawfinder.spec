@@ -11,6 +11,7 @@ Requires:       python
 BuildArch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
+BuildRequires:	make
 %description
 Flawfinder scans through C/C++ source code, identifying lines ("hits") with
 potential security flaws. By default it reports hits sorted by severity, with
