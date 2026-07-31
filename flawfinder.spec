@@ -1,5 +1,5 @@
 Name:           flawfinder
-Version:        2.0.19
+Version:        2.0.20
 Release:        1
 Epoch:          0
 Summary:        Examines C/C++ source code for security flaws
